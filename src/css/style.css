@@ -1,0 +1,599 @@
+@font-face {
+    font-family: 'KievitPro_Bold';
+    src: url("../fonts/KievitPro/KievitPro-Bold.ttf");
+    src: url("../fonts/KievitPro/KievitPro-Bold.ttf")
+    format("eot"), url("../fonts/KievitPro/KievitPro-Bold.ttf")
+    format("woff"), url("../fonts/KievitPro/KievitPro-Bold.ttf")
+    format("truetype"), url("../fonts/KievitPro/KievitPro-Bold.ttf")
+    format("svg");
+    font-weight: normal;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'KievitPro_Regular';
+    src: url("../fonts/KievitPro/KievitPro-Regular.ttf");
+    src: url("../fonts/KievitPro/KievitPro-Regular.ttf")
+    format("eot"), url("../fonts/KievitPro/KievitPro-Regular.ttf")
+    format("woff"), url("../fonts/KievitPro/KievitPro-Regular.ttf")
+    format("truetype"), url("../fonts/KievitPro/KievitPro-Regular.ttf")
+    format("svg");
+    font-weight: normal;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Roboto_Medium';
+    src: url("../fonts/Roboto/Roboto-Medium.ttf");
+    src: url("../fonts/Roboto/Roboto-Medium.ttf")
+    format("eot"), url("../fonts/Roboto/Roboto-Medium.ttf")
+    format("woff"), url("../fonts/Roboto/Roboto-Medium.ttf")
+    format("truetype"), url("../fonts/Roboto/Roboto-Medium.ttf")
+    format("svg");
+    font-weight: normal;
+    font-style: normal; 
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: #000;
+    font-size: 1.5rem;
+    margin: 0;
+    font-family: 'KievitPro_Regular';
+    background: rgb(246, 245, 245);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 29px;
+    font-family: 'KievitPro_Bold';
+    
+}
+div,
+span {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 879px;
+    padding: 0px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* ------------------------------------------------
+------------header---------------------------------
+------------------------------------------------ */
+#header {
+    margin-top: 110px;
+    /* 11111111111111111111111 */
+    /* display: none; */
+}
+#header .box {
+    display: flex;
+    flex-basis: 50%
+} 
+
+#header .box .box-img {
+    margin-bottom: -4px;
+}
+#header .box .box-text {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 373px;
+    margin: 0 auto;
+}
+
+#header .box .box-text h1{
+    margin-top: -20px;
+}
+#header .box .box-text p {
+    line-height: 25px;
+    margin-top: 30px;
+    font-size: 17px;
+}
+#header .box .box-text a {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+
+    border-bottom: inset;
+    inline-size: fit-content;
+    border-color: #FF4641;
+}
+
+/* ------------------------------------------------
+------------barcelona_reviews----------------------
+------------------------------------------------ */
+
+#barcelona_reviews {
+    margin-top: 20px;
+    /* !!!!!!!!!!!!!!!!!!!!!!!!! */
+    /* display: none; */
+}
+
+#barcelona_reviews .reviews-box {
+    margin: auto 35px;
+    padding-top: 35px;
+}
+
+#barcelona_reviews .reviews-box .button {
+    margin-top: 43px;
+    padding-bottom: 40px;
+    position: relative;
+}
+#barcelona_reviews .reviews-box .button a {
+    
+    border: 2px solid #FF4641;
+    border-radius: 2px;
+    padding: 9px 22px;
+}
+
+#barcelona_reviews .reviews-box h1 {
+    letter-spacing: 0.03em;
+}
+.swiper-wrapper {
+    margin-top: 25px;
+}
+.swiper-slide .block {
+    
+    /* margin-top: 22px; */
+    background: #F9F7F2;
+    flex-basis: 300px;
+    overflow: hidden;
+    /* display: flex; */
+    /* flex-direction: column */
+
+    margin-right: 20px;
+    padding: 26px 15px;
+}
+.swiper-slide .block .name {
+    display: flex;
+    align-items: center;
+}
+.swiper-slide .block .name .name-text p {
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: 'KievitPro_Regular';
+    margin-top: -25px;
+}
+/* span */
+.swiper-slide .block .span {
+    display: flex;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+.swiper-slide .block .span span {
+    color: #FC4F1E;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 0.7px;  
+}
+.swiper-slide .block .span p {
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-left: 4px;
+    font-family: 'KievitPro_Regular';
+}
+/* p */
+.swiper-slide .block p {
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    
+    white-space: pre-line;
+    text-align: left;
+    font-family: 'Roboto_Medium';
+}
+/* block-img */
+.swiper-slide .block .block-img {
+    margin-top: 12px;
+    display: flex;
+}
+/* .swiper-slide .block .block-img::after {
+    content: '';
+    position: absolute;
+    right:20px;
+    top: 0;
+    z-index: 1;
+    background: rgba(16, 16, 16, 0.4);
+    padding: 25px;
+}
+.swiper-slide .block .block-img::before {
+    content: '+7';
+    z-index: 2;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    align-items: center;
+    font-family: 'Roboto_Medium';
+    position: absolute;
+    right: 36px;
+    color: #fff;
+    top: 13px;
+} */
+.swiper-slide .block .block-img .img_shadow { 
+}
+.image {
+    margin-right: 5px;
+	float:left;
+	cursor:pointer;
+	max-height:100px;
+}
+.popup {
+	position: fixed;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position: fixed;;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+.popup_img {
+	position: relative;
+	margin:0 auto;
+	z-index:2;
+	max-height:94%;
+	max-width:94%;
+	margin:1% 0 0 0;
+}
+/* post-footer */
+.swiper-slide .block .block-footer {
+    color: #9D9D9D;
+    display: flex;   
+    justify-content: space-between;
+    font-family: 'Roboto_Medium';
+    font-size: 11px;
+    margin-top: 22px;
+}
+.swiper-slide .block .block-footer .post-comments {
+    position: relative;
+}
+.swiper-slide .block .block-footer .post-comments::after {
+    content: '.';
+    position: absolute;
+    left: -10px;
+    top: -2px;
+}
+.swiper-slide .block .block-footer .post-like a {
+    display: flex;
+    font-size: 11px;
+    font-family: 'Roboto_Medium';
+    color: #9D9D9D;
+    align-items: center;   
+}
+.swiper-slide .block .block-footer .post-like a .like {
+    margin: 0 3px;
+    align-items: center;
+}
+
+.slick-track {
+    display: flex;
+}
+.slick-dots li {
+    background: #fff;   
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-slide {
+    
+    text-align: center;
+    font-size: 18px;
+    background: #F9F7F2;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+
+.swiper-pagination {
+    right: 0;
+    opacity: inherit;
+    
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    margin: 5px;
+    outline: none;
+    opacity: 1;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet:active {
+    outline: none;
+}
+/* ------------------------------------------------
+------------chat-----------------------------------
+------------------------------------------------ */
+#footer .chat {
+    display: flex;
+    margin-bottom: 130px;
+    background: #EBE9E4;
+}
+#footer .chat .kol {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(246, 245, 245);
+}
+#footer .chat .kol .kol-text {
+    margin-top: 55px;
+    letter-spacing: 0.03em;
+}
+#footer .chat .kol .kol-block {
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+}
+#footer .chat .kol .kol-block .kol-box {
+    flex-basis: 415px;
+    background: #fff; 
+}
+
+#footer .chat .kol .kol-block .user-name  {
+    display: flex;
+    z-index: 999;
+    box-shadow: 0px 2px 0px 0px #ECECEC;
+    /* background: #000; */
+    padding: 24px;
+    position: relative;
+}
+#footer .chat .kol .kol-block .kol-box .user-name .name-text p {
+    font-size: 18px;
+    line-height: 17px;
+    margin-top: 5px;
+    padding: 0 0 0 18px;
+    font-family: 'KievitPro_Bold';
+}
+#footer .chat .kol .kol-block .kol-box .user-name .name-text a {
+    font-size: 13px;
+    line-height: 17px;
+    padding: 0 0 0 18px;
+    color: #FF4641;
+}
+/* коменты */
+#footer .chat .kol .kol-block .kol-box .user-comment-scroll { 
+    max-height: 490px;
+    overflow-y: scroll;
+}
+#footer .chat .kol .kol-block .kol-box .user-comment-scroll  .user-comment  {
+    margin: 12px;
+    display: flex;
+    z-index: 0;
+}
+#footer .chat .kol .kol-block .kol-box .user-comment-scroll  .uzer-2 {
+    background: #F9F7F2;
+}
+#footer .chat .kol .kol-block .kol-box .user-comment-scroll .user-comment .user-comment-img {
+   margin: 12px;
+    /* margin-left: 23px;
+    /* margin-top: 15px; */
+}
+#footer .chat .kol .kol-block .kol-box .user-comment-scroll .user-comment .user-comment-text {
+    margin-top: 10px; 
+    padding: 0 0 0 10px;
+}
+#footer .chat .kol .kol-block .kol-box .user-comment-scroll .user-comment .user-comment-text p {
+    font-family: 'KievitPro_Regular';
+    font-size: 15px;
+    line-height: 24px;  
+}
+#footer .chat .kol .kol-block .kol-box .user-comment-scroll .user-comment .user-comment-text .data {
+    font-size: 11px;
+    color: #9D9D9D;
+    font-family: 'Roboto_Medium';
+}
+/* скролл чат */
+.user-comment-scroll::-webkit-scrollbar{
+    background: fff;
+    width: 3px;
+}
+.user-comment-scroll::-webkit-scrollbar-thumb {
+    background: red;
+}
+/* <!-- форма отправки --> */
+.user-footer {
+    display: flex;
+    padding-top: 31px;
+    padding-bottom: 35px;
+    position: relative;
+    box-shadow: 0px -2px 0px -1px rgba(0, 0, 255, .2);
+}
+.user-footer img {
+    margin-left: 17px;
+}
+.user-footer input {
+    margin-left: 19px;
+    width: 260px;
+    outline: none;
+    border: 1px solid #ECECEC;
+    padding: 0 7px;
+}
+.user-footer button {
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+/* звезды!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.name-stars {
+    margin-top: 5px;
+    margin-left: auto;
+}
+.rating {
+    position: relative;
+    width: 65px;
+    height: 12px;
+    margin: 10px 0;
+    list-style: none;
+    background: url(../img/chat/Star.png);
+}
+.rating li {
+    float: left;
+    height: 12px;
+}
+.rating li.current {
+    background: url(../img/chat/Star.png) left bottom;
+}
+.rating li span[class*="star"] {
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 12px;
+    cursor: pointer;
+}
+.rating li span[class*="star"]:hover {
+    left: 0;
+    background: url(../img/chat/Star.png) left bottom;
+}
+.rating li span.star1 {
+    left: 0;
+}
+.rating li span.star1:hover {
+    width: 13px;
+}
+.rating li span.star2 {
+    left: 13px;
+}
+.rating li span.star2:hover {
+    width: 26px;
+}
+.rating li span.star3 {
+    left: 26px;
+}
+.rating li span.star3:hover {
+    width: 39px;
+}
+.rating li span.star4 {
+    left: 39px;
+}
+.rating li span.star4:hover {
+    width: 52px;
+}
+.rating li span.star5 {
+    left: 52px;
+}
+.rating li span.star5:hover {
+    width: 65px;
+}
+/* kol-2 */
+.kol-right {
+    padding-left: 30px;
+}
+/* line */
+.line {
+    
+    max-height: 50px;
+    width: 1.5px;
+    background: rgb(246, 245, 245);
+    display: flex;
+}
+
+/* ------------------------------------------------
+------------media----------------------------------
+------------------------------------------------ */
+
+
+@media screen and (max-width: 1024px) {
+    #header .box .box-text {
+        margin: auto 20px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    #header .box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #header .box .box-img img {
+        max-width: 100%;
+    }
+
+
+    /* footer */
+    #footer .chat {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    #footer .chat .kol {
+        align-items: center;
+    }
+    #footer .chat .kol .kol-block {
+        justify-content: center;
+    }
+    .kol-right {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+}
+@media screen and (max-width: 375px) {
+
+
+
+    /* footer */
+    #footer .chat .kol .kol-block .kol-box .user-name {
+        
+        padding: 24px 20px;
+    }
+    #footer .chat .kol .kol-block .kol-box .user-comment-scroll .user-comment {
+    
+        margin: 12px 7px;
+    }
+    .user-footer input {
+        width: 195px;
+    }
+}
